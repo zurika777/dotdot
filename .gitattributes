@@ -1,0 +1,4 @@
+*.txt merge=text
+*.jpg merge=binary
+/NEWS.md merge=union
+*.po merge=po
