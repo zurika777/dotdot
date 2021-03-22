@@ -9,15 +9,6 @@
   z-index: 1000;
 }
 
-.intro {
-  width: 100%;
-  height: 50vh;
-
-
-  background: url("../img/intro.png") center no-repeat;
-  background-size: cover;
-  align-items: center;
-}
 
 .header__inner {
   display: flex;
@@ -65,4 +56,8 @@
     opacity: 1;
 
   }
+  &.active {
+    color: #fce38a;
+  }
 }
+

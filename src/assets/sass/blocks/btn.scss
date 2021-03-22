@@ -1,0 +1,18 @@
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 8px 30px;
+
+
+  border: 1px solid #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: navajowhite;
+  text-transform: uppercase;
+
+  transition: background-color .1s linear, color .1s linear;
+  &:hover {
+    background-color: #fff;
+    color: #333;
+  }
+}

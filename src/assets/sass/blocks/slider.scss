@@ -1,0 +1,46 @@
+.slider {
+  width: 100%;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+
+}
+.slider__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.slider__item {
+  width: 23%;
+  position: relative;
+  padding: 20px 0;
+  border-top: 3px solid #fff;
+  opacity: .7;
+
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+
+  &:active {
+    opacity: 1;
+  }
+  &.active:before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+
+    background-color: red;
+
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+.slider__num {
+  font-size: 1.5rem;
+  font-weight: 700;
+}

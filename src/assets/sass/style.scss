@@ -19,7 +19,6 @@ p {
     margin: 0;
 }
 
-
 /* Bootstrap */
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "../../../node_modules/bootstrap/scss/variables";
@@ -31,6 +30,10 @@ p {
 
 
 /* Blocks */
-@import"blocks/header";
 @import"blocks/container";
+@import"blocks/header";
+@import"blocks/intro";
+@import"blocks/btn";
+@import"blocks/slider";
+
 @import"_vars.scss";

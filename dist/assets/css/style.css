@@ -1147,6 +1147,13 @@ p {
 /*@import "../../../node_modules/bootstrap/scss/utilities/flex";
 @import "../../../node_modules/bootstrap/scss/utilities/spacing";*/
 /* Blocks */
+.containesr {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: auto;
+}
+
 .header {
     width: 100%;
     padding-top: 2rem;
@@ -1155,14 +1162,6 @@ p {
     left: 0;
     right: 0;
     z-index: 1000;
-}
-
-.intro {
-    width: 100%;
-    height: 50vh;
-    background: url("../img/intro.png") center no-repeat;
-    background-size: cover;
-    align-items: center;
 }
 
 .header__inner {
@@ -1215,9 +1214,110 @@ p {
     opacity: 1;
 }
 
-.container {
+.nav__link.active {
+    color: #fce38a;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
-    max-width: 1200px;
+    height: 100vh;
+    background: url("../img/intro.png") center no-repeat;
+    background-size: cover;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 880px;
     margin: 0 auto;
-    height: auto;
+    text-align: center;
+}
+
+.intro__title {
+    color: #fff;
+    font-size: 10rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.intro__title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #fff;
+    margin: 50px auto 20px;
+}
+
+.intro__suptitle {
+    margin-bottom: 1rem;
+    font-family: ' Kaushan Script', cursive;
+    font-size: 5rem;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+    border: 1px solid #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    -webkit-text-decoration: navajowhite;
+    text-decoration: navajowhite;
+    text-transform: uppercase;
+    transition: background-color .1s linear, color .1s linear;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.slider {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.slider__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider__item {
+    width: 23%;
+    position: relative;
+    padding: 20px 0;
+    border-top: 3px solid #fff;
+    opacity: .7;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.slider__item:active {
+    opacity: 1;
+}
+
+.slider__item.active:before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 1;
+}
+
+.slider__num {
+    font-size: 1.5rem;
+    font-weight: 700;
 }

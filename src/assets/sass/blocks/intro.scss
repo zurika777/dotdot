@@ -1,0 +1,41 @@
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    width: 100%;
+    height: 100vh; //nishvans 50% is shemtxvevashi horizontalurad
+
+
+  background: url("../img/intro.png") center no-repeat;
+  background-size: cover;
+
+}
+.intro__inner {
+	width: 100%;
+	max-width: 880px;
+	margin: 0 auto;
+	text-align: center;
+}
+.intro__title {
+	color: #fff;
+	font-size: 10rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 1;
+
+	&:after {
+		content: "";
+		display: block;
+		width: 60px;
+		height: 2px;
+		background-color: #fff;
+		margin: 50px auto 20px;
+
+	}
+}
+.intro__suptitle {
+	margin-bottom: 1rem;
+	font-family: ' Kaushan Script', cursive;
+	font-size: 5rem;
+	color: #fff;
+}
