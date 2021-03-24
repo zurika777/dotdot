@@ -1,0 +1,106 @@
+.about {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about__item {
+  position: relative;
+  flex-basis: 32%;
+  background-color: #95e1d3;
+  &:hover {
+    .about__text {
+      opacity: .7;
+    }
+    .about__img {
+      transform: translate3d(-10px, -10px, 0);
+      img {
+        opacity: .7;
+      }
+    }
+  }
+}
+.about__img {
+  background: linear-gradient(to bottom, #f38181, #fce38a);
+  transition: transform .2s linear;
+  img {
+    display: block;
+    transition: opacity .1s linear;
+
+  }
+}
+.about__text {
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  opacity: 0;
+
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  transform: translate3d(0, -50%, 0);
+
+  transition: opacity .1s linear;
+}
+
+/*ufro natlad chans amgvarad
+--------------------------------------------------------*/
+
+/*.about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__item {
+  width: 380px;
+  flex.basis: 32%;
+  position: relative;
+  background-color: #95e1d3;
+}
+
+.about__item:hover .about__img {
+transform: translate3d(-10px, -10px, 0);
+
+}
+
+.about__item:hover .about__img img {
+opacity: .1;
+
+}
+
+.about__item:hover .about__text {
+    opacity: .7;
+
+}
+.about__img {
+  background: linear-gradient(to bottom, #f38181, #fce38a);
+    transition: transform .2s linear;
+}
+
+.about__img img {
+display: block;
+  transition: opacity .1s linear;
+}
+
+.about__text {
+
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  opacity: 0;
+
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  transform: translate3d(0, -50%, 0);
+
+  transition: opacity .1s linear;
+}*/

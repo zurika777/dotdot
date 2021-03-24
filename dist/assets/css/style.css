@@ -1192,10 +1192,6 @@ p {
     text-decoration: none;
 }
 
-.nav__link:hover {
-    color: #fce38a;
-}
-
 .nav__link:after {
     content: "";
     display: block;
@@ -1210,6 +1206,10 @@ p {
     z-index: 1;
 }
 
+.nav__link:hover {
+    color: #fce38a;
+}
+
 .nav__link:hover:after {
     opacity: 1;
 }
@@ -1222,9 +1222,10 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    height: 100vh;
-    background: url("../img/intro.png") center no-repeat;
+    width: 1920px;
+    height: 1000px;
+    background: url("../img/454.png") center no-repeat;
+  /*	background: linear-gradient(to bottom, #F59583, #FBDE89);*/
     background-size: cover;
 }
 
@@ -1321,3 +1322,151 @@ p {
     font-size: 1.5rem;
     font-weight: 700;
 }
+
+.section {
+    padding: 5rem 0;
+}
+
+.section__header {
+    width: 100%;
+    max-width: 950px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.section__tiitle {
+    color: #333;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.section__tiitle:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: red;
+    margin: 30px auto;
+}
+
+.section__suptitle {
+    margin-bottom: 1rem;
+    font-family: ' Kaushan Script', cursive;
+    font-size: 2rem;
+    color: #333;
+}
+
+.section__text {
+    font-size: 1.5rem;
+    color: #999;
+}
+
+.about {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about__item {
+    position: relative;
+    flex-basis: 32%;
+    background-color: #95e1d3;
+}
+
+.about__item:hover .about__text {
+    opacity: .7;
+}
+
+.about__item:hover .about__img {
+    transform: translate3d(-10px, -10px, 0);
+}
+
+.about__item:hover .about__img img {
+    opacity: .7;
+}
+
+.about__img {
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+    transition: transform .2s linear;
+}
+
+.about__img img {
+    display: block;
+    transition: opacity .1s linear;
+}
+
+.about__text {
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translate3d(0, -50%, 0);
+    transition: opacity .1s linear;
+}
+
+/*ufro natlad chans amgvarad
+--------------------------------------------------------*/
+/*.about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__item {
+  width: 380px;
+  flex.basis: 32%;
+  position: relative;
+  background-color: #95e1d3;
+}
+
+.about__item:hover .about__img {
+transform: translate3d(-10px, -10px, 0);
+
+}
+
+.about__item:hover .about__img img {
+opacity: .1;
+
+}
+
+.about__item:hover .about__text {
+    opacity: .7;
+
+}
+.about__img {
+  background: linear-gradient(to bottom, #f38181, #fce38a);
+    transition: transform .2s linear;
+}
+
+.about__img img {
+display: block;
+  transition: opacity .1s linear;
+}
+
+.about__text {
+
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  opacity: 0;
+
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  transform: translate3d(0, -50%, 0);
+
+  transition: opacity .1s linear;
+}*/

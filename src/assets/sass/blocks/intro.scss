@@ -2,12 +2,14 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-    width: 100%;
-    height: 100vh; //nishvans 50% is shemtxvevashi horizontalurad
+    width: 1920px;
+    height: 1000px; //nishvans 50% is shemtxvevashi horizontalurad
 
 
-  background: url("../img/intro.png") center no-repeat;
+  background: url("../img/454.png") center no-repeat;
+/*	background: linear-gradient(to bottom, #F59583, #FBDE89);*/
   background-size: cover;
+
 
 }
 .intro__inner {
