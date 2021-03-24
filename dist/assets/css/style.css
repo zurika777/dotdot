@@ -1470,3 +1470,34 @@ display: block;
 
   transition: opacity .1s linear;
 }*/
+.statistic {
+    background-color: #95e1d3;
+}
+
+.stat {
+    display: flex;
+}
+
+.stat__item {
+    flex: 1 1 0;
+    border-left: 1px solid #b5eae0;
+    text-align: center;
+    padding: 8rem 2em;
+    color: #fff;
+}
+
+.stat__item:last-child {
+    border-right: 1px solid #b5eae0;
+}
+
+.stat_count {
+    margin-bottom: 1rem;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.stat__text {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
