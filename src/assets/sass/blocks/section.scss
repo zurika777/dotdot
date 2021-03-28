@@ -1,6 +1,29 @@
 .section {
   padding: 5rem 0;
+  &--devices {
+    padding-bottom: 0;
+    background: url("../img/Layer 45.png")  center no-repeat;
+    background-size: cover;
 
+
+  }
+}
+.devices {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+.devices__item {
+  display: block;
+
+  &--iphone {
+    position: absolute;
+
+    right: 0;
+    bottom: -30px;
+    z-index: 1;
+  }
 }
 .section__header {
   width: 100%;
