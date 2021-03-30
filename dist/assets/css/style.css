@@ -1675,12 +1675,12 @@ hr {
 }
 
 .reviews__item {
-    padding-left: 10rem;
+    padding-left: 18rem;
     position: relative;
 }
 
 .revews__photo {
-    padding: .7rem;
+    padding: .9rem;
     border: 2px solid #95e1d3;
     position: absolute;
     top: 0;
@@ -1741,4 +1741,59 @@ hr {
 .logos {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.works {
+    display: flex;
+}
+
+.works__col {
+    flex: 1 1 0;
+}
+
+.works__item {
+    position: relative;
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+}
+
+.works__item:hover .works__image {
+    opacity: .1;
+}
+
+.works__item:hover .works__info {
+    opacity: 1;
+}
+
+.works__image {
+    display: block;
+    width: 100%;
+    transition: opacity .2s linear;
+}
+
+.works__info {
+    padding: 0 1rem;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translate3d(0, -50%, 0);
+    transition: opacity .2s linear;
+}
+
+.works__title {
+    margin-bottom: .2rem;
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.works__text {
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-style: italic;
 }
