@@ -1334,6 +1334,10 @@ p {
     background-size: cover;
 }
 
+.section--grey {
+    background-color: #f8f8f8;
+}
+
 .devices {
     width: 100%;
     max-width: 600px;
@@ -1637,4 +1641,73 @@ hr {
     left: 20px;
     z-index: 1;
     transform: translateY(-50%);
+}
+
+.reviews {
+    padding: 0 10rem;
+    position: relative;
+}
+
+.reviews__item {
+    padding-left: 10rem;
+    position: relative;
+}
+
+.revews__photo {
+    padding: .7rem;
+    border: 2px solid #95e1d3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.reviews__text {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 300;
+    color: #999;
+}
+
+.reviews__author {
+    font-family: ' Kaushan Script', cursive;
+}
+
+.reviews__author:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 3px;
+    background-color: red;
+    margin-right: 1rem;
+}
+
+.reviews__btn {
+    font-size: 0;
+    color: transparent;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    transform: translateY(-50%);
+}
+
+.reviews__btn:after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-top: 2px solid #ccc;
+    border-left: 2px solid #ccc;
+}
+
+.reviews__btn--prev {
+    left: 0;
+    transform: rotate(-45deg);
+}
+
+.reviews__btn--next {
+    right: 0;
+    transform: rotate(135deg);
 }
