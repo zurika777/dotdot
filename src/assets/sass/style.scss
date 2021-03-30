@@ -4,7 +4,8 @@ html {
 }
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    //font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
     background-color: #fefefe;
 }
@@ -39,5 +40,6 @@ p {
 @import"blocks/about";
 @import"blocks/statistic";
 @import"blocks/services";
+@import"blocks/wedo";
 
 @import"_vars.scss";

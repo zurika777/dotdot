@@ -5,7 +5,7 @@ html {
 
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
     background-color: #fefefe;
 }
@@ -1328,6 +1328,7 @@ p {
 }
 
 .section--devices {
+    margin-bottom: 4rem;
     padding-bottom: 0;
     background: url("../img/Layer 45.png") center no-repeat;
     background-size: cover;
@@ -1385,6 +1386,7 @@ p {
 .section__text {
     font-size: 1.5rem;
     color: #999;
+    margin-bottom: 4rem;
 }
 
 .about {
@@ -1564,4 +1566,75 @@ hr {
     font-size: 1.5rem;
     color: #999;
     line-height: 1.5;
+}
+
+.wedo {
+    display: flex;
+}
+
+.wedo__item {
+    width: 50%;
+}
+
+/*accordion  ---- */
+.accordion__item {
+    border: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+}
+
+.accordion__item--active .accordion__content {
+    display: block;
+}
+
+.accordion__item--active .accordion__header {
+    border-bottom-color: #e5e5e5;
+}
+
+.accordion__item--active .accordion__header:after {
+    transform: translateY(-50%) rotate(-45deg);
+    margin-top: 5px;
+}
+
+.accordion__header {
+    padding: 1rem 1.5rem 1rem 6rem;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    position: relative;
+}
+
+.accordion__header:after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-top: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    top: 50%;
+    right: 20px;
+    z-index: 1;
+    position: absolute;
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.accordion__content {
+    display: none;
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 300;
+    color: #999;
+}
+
+.accordion__title {
+    font-size: 1.4rem;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.accordion__icon {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    z-index: 1;
+    transform: translateY(-50%);
 }
