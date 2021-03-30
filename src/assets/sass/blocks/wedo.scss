@@ -1,4 +1,3 @@
-
 .wedo {
   display: flex;
 
@@ -6,7 +5,10 @@
 .wedo__item {
   width: 50%;
 }
-
+.wedo__photo {
+  width: 540px;
+  height: 350px;
+}
 /*accordion  ---- */
 
 .accordion__item {
@@ -66,4 +68,3 @@
   z-index: 1;
   transform: translateY(-50%);
 }
-
