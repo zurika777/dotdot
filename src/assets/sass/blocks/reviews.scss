@@ -13,6 +13,10 @@
   top: 0;
   left: 0;
   z-index: 1;
+  &--radius {
+  border-radius: 50%;
+  top: -30px;
+  }
 }
 .reviews__text {
   margin-bottom: 1rem;
