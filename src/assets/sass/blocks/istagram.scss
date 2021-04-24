@@ -1,0 +1,12 @@
+.istagram {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.istagram__item {
+  width: 32.33333%;
+  border-bottom: 1px solid #fff;
+  img {
+    display: block;
+  }
+}

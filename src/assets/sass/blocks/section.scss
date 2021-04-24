@@ -14,6 +14,11 @@
     background: #f5f5f5 url("../img/Layer 45.png") center no-repeat;
     background-size: cover;
   }
+  &--map {
+    padding: 4rem 0;
+    background: #e6e6e6 url("../img/Layer 59.png") center no-repeat;
+    background-size: cover;
+  }
 }
 
 .devices {
@@ -57,7 +62,10 @@
 
   }
 }
+.section__image {
+  margin: 2rem auto;
 
+}
 .section__suptitle {
   margin-bottom: 1rem;
   font-family: ' Kaushan Script', cursive;

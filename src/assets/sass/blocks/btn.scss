@@ -11,8 +11,35 @@
   text-transform: uppercase;
 
   transition: background-color .1s linear, color .1s linear;
+
   &:hover {
     background-color: #fff;
     color: #333;
   }
+  &--subscribe {
+    width: 40%;
+    background-color: #95e1d3;
+    border: 0;
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.1;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+
+    transition: background .2s linear;
+    &:hover {
+      background-color: #74c7b8;
+      color: #fff;
+    }
+    &:focus {
+      outline: none;
+      border-color: #95e1d3;
+    }
+  }
+
 }
