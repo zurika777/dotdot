@@ -1,7 +1,7 @@
 .block {
   display: flex;
   justify-content: space-between;
-
+  flex-wrap: wrap;
 }
 .block__item {
   width: 30%;
@@ -73,4 +73,19 @@
   display: inline-block;
   vertical-align: top;
   margin-right: 10px;
+}
+@include breakpoint($tablet-bp) {
+  .block {
+    max-width: 390px;
+    margin: 0 auto;
+  }
+
+  .block__item {
+
+  width: 100%;
+    margin-bottom: 3rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }

@@ -4,10 +4,15 @@
   text-align: center;
 
     font-size: 1.4rem;
-    color: #333;
+    color: $black;
     font-style: italic;
     font-weight: 700;
+
+
   span {
     color: #f38181;
   }
+  @include breakpoint($tablet-bp) {
+    display: none;
+}
 }

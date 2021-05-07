@@ -6,8 +6,11 @@
   padding-bottom: 5.5rem;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -1.5rem;
 }
 .footer__col {
+  padding: 0 1.5rem;
   &--first {
     width: 47%;
   }
@@ -99,4 +102,38 @@
     color: #ccc;
   }
 }
+@include breakpoint($desctop-bp) {
+  .footer__col {
+    &--first {
+      width: 100%;
+    }
+    &--second {
+      width: 50%;
+    }
+    &--third {
+      width: 50%;
+    }
+  }
+}
+@include breakpoint($tablet-bp) {
+  .footer__col {
+    width: 100%;
+  }
+}
 
+@include breakpoint($mobile-bp) {
+  .subscribe {
+    flex-wrap: wrap;
+    max-width: none;
+  }
+  .subscribe__input {
+    margin-bottom: 1rem;
+    border-right: 1px solid #e7e7e7;
+    width: 100%;
+  }
+  .btn {
+    &--subscribe {
+      width: 100%;
+    }
+  }
+}

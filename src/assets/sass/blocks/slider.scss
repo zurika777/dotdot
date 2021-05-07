@@ -44,3 +44,18 @@
   font-size: 1.5rem;
   font-weight: 700;
 }
+
+.slider__text {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+@include breakpoint($tablet-bp) {
+  .slider__text {
+    display: none;
+  }
+  .slider__item {
+    &.active:before {
+      width: 50%;
+    }
+  }
+}

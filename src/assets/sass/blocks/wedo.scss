@@ -1,13 +1,16 @@
 .wedo {
   display: flex;
-
+  flex-wrap: wrap;
+  margin: 0 -1.5rem;
 }
 .wedo__item {
   width: 50%;
+  padding: 0 1.5rem;
 }
 .wedo__photo {
-  width: 540px;
-  height: 350px;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 /*accordion  ---- */
 
@@ -67,4 +70,14 @@
   left: 20px;
   z-index: 1;
   transform: translateY(-50%);
+}
+
+@include breakpoint($tablet-bp) {
+
+  .wedo__photo {
+    display: none;
+  }
+  .wedo__item {
+    width: 100%;
+  }
 }

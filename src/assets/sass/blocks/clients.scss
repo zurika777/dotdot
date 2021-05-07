@@ -44,3 +44,33 @@
     background-color: #f38181;
   }
 }
+@include breakpoint($huge-bp) {
+  .clients {
+    max-width: 600px;
+   margin: 0 auto;
+  }
+  .clients__item {
+    width: 100%;
+    padding-right: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .clients__text {
+
+    &:before {
+    margin: 1.5rem auto;
+    }
+  }
+}
+@include breakpoint($tablet-bp) {
+  .clients__photo {
+    position: static;
+    margin-bottom: 2rem;
+  }
+  .clients__item {
+    padding-left: 0;
+   text-align: center;
+  }
+
+}

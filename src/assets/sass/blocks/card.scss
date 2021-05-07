@@ -1,12 +1,17 @@
 .card {
-  margin-top: 6rem;
+  margin: 8rem -1.5rem 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.card__item {
+  width: 32.33333%;
+  padding: 0 1.5rem;
+}
 .card__inner {
 
-  flex-basis: 32%;
+  position: relative;
+  background-color: #95e1d3;
 
   &:hover {
     .card__text {
@@ -20,16 +25,15 @@
     }
   }
 }
-.card__inner {
-  position: relative;
-  background-color: #95e1d3;
-}
+
 .card__img {
   background: linear-gradient(to bottom, #f38181, #fce38a);
   transition: transform .2s linear;
   img {
     display: block;
     transition: opacity .1s linear;
+    max-width: 100%;
+    height: auto;
 
   }
 }
@@ -67,6 +71,22 @@
   color: #999;
   font-style: italic;
 }
+
+@include breakpoint($tablet-bp) {
+  .card {
+    margin-top: 5rem;
+    justify-content: center;
+  }
+  .card__item {
+    margin-bottom: 3rem;
+    width: 100%;
+    max-width: 410px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
 /*ufro natlad chans amgvarad
 --------------------------------------------------------*/
 

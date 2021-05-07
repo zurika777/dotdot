@@ -1,3 +1,6 @@
+/*@import "../vars";
+@import "../mixin";*/
+
 .reviews {
   padding: 0 10rem;
   position: relative;
@@ -6,7 +9,8 @@
   padding-left: 18rem;
   position: relative;
 }
-.revews__photo {
+.reviews__photo {
+  display: block;
   padding: .9rem;
   border: 2px solid #95e1d3;
   position: absolute;
@@ -20,13 +24,15 @@
 }
 .reviews__text {
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-style: italic;
   font-weight: 300;
   color: #999;
 }
 .reviews__author {
   font-family: ' Kaushan Script', cursive;
+  font-size: 2.2rem;
+  color: #333;
 
   &:before {
     content: "";
@@ -65,5 +71,47 @@
   &--next {
     right: 0;
     transform: rotate(135deg);
+  }
+}
+
+@include breakpoint($huge-bp) {
+  .reviews {
+    padding: 0 6rem;
+  }
+  .reviews__text {
+    font-size: 1rem;
+  }
+  .reviews__item {
+    padding-left: 17.5rem;
+  }
+}
+
+@include breakpoint($tablet-bp) {
+  .reviews {
+    padding: 0;
+  }
+  .reviews__text {
+    font-size: 1.2rem;
+  }
+  .reviews__photo{
+
+    width: 50px;
+    height: 50px;
+    position: static;
+    margin: 0 auto 2rem;
+    &--radius {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  .reviews__item {
+    padding-left: 0;
+  }
+  .reviews__btn {
+    top: 12%;
+  }
+  .reviews__author {
+    text-align: center;
+    font-size: 2rem;
   }
 }

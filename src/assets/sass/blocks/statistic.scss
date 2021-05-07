@@ -4,6 +4,7 @@
 }
 .stat {
   display: flex;
+  flex-wrap: wrap;
 
 }
 
@@ -27,4 +28,32 @@
 .stat__text {
   font-size: 1.5rem;
   text-transform: uppercase;
+}
+@include breakpoint($desctop-bp) {
+  .stat {
+    justify-content: center;
+  }
+  .stat__item {
+    flex: none;
+    width: 33.33333%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    border: 0;
+    &:last-child {
+      border-right: 0;
+    }
+  }
+}
+@include breakpoint($mobile-bp) {
+  .stat__item {
+    width: 100%;
+    border-bottom: 1px solid #b5eae0;
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+  .stat_count {
+    font-size: 3.8rem;
+  }
 }

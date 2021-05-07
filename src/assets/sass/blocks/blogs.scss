@@ -30,3 +30,9 @@
   font-style: italic;
   font-weight: 300;
 }
+@include breakpoint($mobile-bp) {
+  .blogs__img {
+    width: 80px;
+    height: 50px;
+  }
+}

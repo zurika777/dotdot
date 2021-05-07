@@ -3,20 +3,26 @@ layout: default
 title: HomePage
 ---
 
-<header class="header">
+<header class="header header--fixed">
     <div class="container">
         <div class="header__inner">
             <div class="header__logo">Mogo</div>
             <nav class="nav">
                 <a class="nav__link" href="#">card</a>
-                <a class="nav__link active" href="">about</a>
+                <a class="nav__link" href="">about</a>
                 <a class="nav__link"  href="#" data-scroll="#slider" >slider</a>
                 <a class="nav__link" href="">about</a>
                 <a class="nav__link" href="">fas fa-search</a>
             </nav>
+            <button class="nav__toggle active" type="button">
+                <span class="nav__toggle--item">Menu</span>
+            </button>
         </div>
     </div>
 </header> <!--/header-->
+
+
+<div class="page">
 
 <div class="intro">
     <div class="container">
@@ -33,16 +39,20 @@ title: HomePage
     <div class="container">
         <div class="slider__inner">
             <div class="slider__item active">
-                <span class="slider__num">01 Intro</span>
+                <span class="slider__num">01</span>
+                <span class="slider__text">Intro</span>
             </div>
             <div class="slider__item">
-                <span class="slider__num">02 Work</span>
+                <span class="slider__num">02</span>
+                <span class="slider__text">Intro</span>
             </div>
             <div class="slider__item">
-                <span class="slider__num">03  About </span>
+                <span class="slider__num">03</span>
+                <span class="slider__text">Intro</span>
             </div>
             <div class="slider__item">
-                <span class="slider__num">04 Contacts</span>
+                <span class="slider__num">04</span>
+                <span class="slider__text">Intro</span>
             </div>
         </div>
     </div>
@@ -124,6 +134,27 @@ title: HomePage
             <div class="section__tiitle">Story about us</div>
         </div>  <!--/section__header-->
         <div class="services">
+            <div class="services__item services__item--border">
+                <img class="services__icon" src="assets/img/ALARM.png" alt="">
+
+                <div class="services__title">satauri</div>
+                <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aspernapariatur placeat quod.</div>
+            </div>
+
+            <div class="services__item services__item--border">
+                <img class="services__icon" src="assets/img/ALARM.png" alt="">
+
+                <div class="services__title">satauri</div>
+                <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aspernapariatur placeat quod.</div>
+            </div>
+
+
+            <div class="services__item services__item--border">
+                <img class="services__icon" src="assets/img/ALARM.png" alt="">
+
+                <div class="services__title">satauri</div>
+                <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aspernapariatur placeat quod.</div>
+            </div>
             <div class="services__item">
                 <img class="services__icon" src="assets/img/ALARM.png" alt="">
 
@@ -145,36 +176,9 @@ title: HomePage
                 <div class="services__title">satauri</div>
                 <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aspernapariatur placeat quod.</div>
             </div>
-
 
         </div>
-        <hr>
 
-        <div class="services">
-            <div class="services__item">
-                <img class="services__icon" src="assets/img/ALARM.png" alt="">
-
-                <div class="services__title">satauri</div>
-                <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aspernapariatur placeat quod.</div>
-            </div>
-
-            <div class="services__item">
-                <img class="services__icon" src="assets/img/ALARM.png" alt="">
-
-                <div class="services__title">satauri</div>
-                <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aspernapariatur placeat quod.</div>
-            </div>
-
-
-            <div class="services__item">
-                <img class="services__icon" src="assets/img/ALARM.png" alt="">
-
-                <div class="services__title">satauri</div>
-                <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aspernapariatur placeat quod.</div>
-            </div>
-
-
-        </div>
     </div>
 </section>
 
@@ -277,7 +281,7 @@ title: HomePage
             <a  class="reviews__btn reviews__btn--prev" href="#">Prev</a>
             <a  class="reviews__btn reviews__btn--next" href="#">Next</a>
             <div class="reviews__item">
-                <img class="revews__photo" src="assets/img/SPEECH 4.png" alt="">
+                <img class="reviews__photo" src="assets/img/SPEECH 4.png" alt="">
                 <div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, blanditiis commodi debitis dignissimos dolor dolores eaque eius eum facere incidunt ipsum magni obcaecati pariatur placeat quis ratione saepe tenetur, ullam?</div>
 
                 <div class="reviews__author">Z.D</div>
@@ -349,22 +353,22 @@ title: HomePage
     <div class="container">
         <div class="logos">
             <div class="logos__item">
-                <img src="assets/img/logos/New Project.png" alt="">
+                <img class="logos__img" src="assets/img/logos/New Project.png" alt="">
             </div>
             <div class="logos__item">
-                <img src="assets/img/logos/New Project2.png" alt="">
+                <img class="logos__img" src="assets/img/logos/New Project2.png" alt="">
             </div>
             <div class="logos__item">
-                <img src="assets/img/logos/New Project3.png" alt="">
+                <img class="logos__img" src="assets/img/logos/New Project3.png" alt="">
             </div>
             <div class="logos__item">
-                <img src="assets/img/logos/New Project4.png" alt="">
+                <img class="logos__img" src="assets/img/logos/New Project4.png" alt="">
             </div>
             <div class="logos__item">
-                <img src="assets/img/logos/New Project5.png" alt="">
+                <img class="logos__img" src="assets/img/logos/New Project5.png" alt="">
             </div>
             <div class="logos__item">
-                <img src="assets/img/logos/New Projec6.png" alt="">
+                <img class="logos__img" src="assets/img/logos/New Projec6.png" alt="">
             </div>
         </div>
     </div>
@@ -459,7 +463,7 @@ title: HomePage
             <a  class="reviews__btn reviews__btn--prev" href="#">Prev</a>
             <a  class="reviews__btn reviews__btn--next" href="#">Next</a>
             <div class="reviews__item">
-                <img class="revews__photo revews__photo--radius" src="assets/img/logos/New Project.png" alt="">
+                <img class="reviews__photo reviews__photo--radius" src="assets/img/logos/New Project.png" alt="">
                 <div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, blanditiis commodi debitis dignissimos dolor dolores eaque eius eum facere incidunt ipsum magni obcaecati pariatur placeat quis ratione saepe tenetur, ullam?</div>
 
                 <div class="reviews__author">Z.D</div>
@@ -742,3 +746,4 @@ title: HomePage
         </div>
     </div>
 </footer>
+</div>

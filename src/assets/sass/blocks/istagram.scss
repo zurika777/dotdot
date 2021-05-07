@@ -4,9 +4,21 @@
   justify-content: space-between;
 }
 .istagram__item {
-  width: 32.33333%;
+  width: 33%;
   border-bottom: 1px solid #fff;
   img {
     display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+@include breakpoint($desctop-bp) {
+
+  .istagram {
+    justify-content: flex-start;
+  }
+  .istagram__item {
+    width: auto;
+    border-right: 1px solid white;
   }
 }

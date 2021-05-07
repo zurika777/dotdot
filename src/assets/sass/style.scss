@@ -19,6 +19,9 @@ h1, h2, h3, h4, h5, h6 {
 p {
     margin: 0;
 }
+.page {
+    overflow: hidden;
+}
 
 /* Bootstrap */
 @import "../../../node_modules/bootstrap/scss/functions";
@@ -51,4 +54,5 @@ p {
 @import"blocks/istagram";
 @import"blocks/copyright";
 
-@import"_vars.scss";
+@import"_vars";
+@import"_mixin";
