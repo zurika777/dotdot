@@ -39,9 +39,41 @@ $(function() {
     }
 
 
+/*
+    Menu nav toggle
+*/
+    $("#nav__toggle").on("click" , function (event) {
+        event.preventDefault();
+
+        $(this).toggleClass("active");
+        $("#nav").toggleClass("active");
+    });
+
+
+    /*
+        collapse
+    */
+    $("[data-collapse]").on("click", function(event) {
+         event.preventDefault();
+
+        var $this = $(this),
+        blockId = $this.data('collapse');
+
+        $(this).toggleClass("accordion__item--active");
 
 
 
+        console.log(blockId)
+        });
+
+
+
+    $("[data-slider]").slick({
+        infinite: true,
+        fade: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    });
 
 
 });

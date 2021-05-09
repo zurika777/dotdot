@@ -6,8 +6,10 @@
   position: relative;
 }
 .reviews__item {
+  //min-height: 21rem;
   padding-left: 18rem;
   position: relative;
+
 }
 .reviews__photo {
   display: block;
@@ -45,10 +47,12 @@
 
   }
 }
-.reviews__btn {
+.reviews__btn, .slick-arrow {
+  display: block;
   font-size: 0;
   color: transparent;
-
+  border: 0;
+  background: 0;
   position: absolute;
   top: 50%;
   z-index: 2;
@@ -72,6 +76,11 @@
     right: 0;
     transform: rotate(135deg);
   }
+}
+.slick-prev, .slick-next {
+  border: 0;
+  background: none;
+  display: none;
 }
 
 @include breakpoint($huge-bp) {

@@ -20,6 +20,7 @@
 
     top: 0;
     left: 0;
+
     right: 0;
 
 
@@ -46,6 +47,9 @@
 .nav {
   font-size: 1rem;
   text-transform: uppercase;
+  &.active {
+   display: block;
+  }
 }
 .nav__link {
   display: inline-block;
@@ -81,6 +85,9 @@
     color: #fce38a;
   }
 }
+.nav.active {
+
+}
 
 .nav__toggle {
   width: 30px;
@@ -96,6 +103,9 @@
   top: 24px;
   right: 24px;
   z-index: 1;
+  &:focus {
+   outline: 0;
+  }
 
   &--item {
     display: block;

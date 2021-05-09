@@ -1200,6 +1200,10 @@ p {
     text-transform: uppercase;
 }
 
+.nav.active {
+    display: block;
+}
+
 .nav__link {
     display: inline-block;
     vertical-align: top;
@@ -1249,6 +1253,10 @@ p {
     top: 24px;
     right: 24px;
     z-index: 1;
+}
+
+.nav__toggle:focus {
+    outline: 0;
 }
 
 .nav__toggle--item {
@@ -2058,16 +2066,19 @@ display: block;
     margin-right: 1rem;
 }
 
-.reviews__btn {
+.reviews__btn, .slick-arrow {
+    display: block;
     font-size: 0;
     color: transparent;
+    border: 0;
+    background: 0;
     position: absolute;
     top: 50%;
     z-index: 2;
     transform: translateY(-50%);
 }
 
-.reviews__btn:after {
+.reviews__btn:after, .slick-arrow:after {
     content: "";
     display: block;
     width: 16px;
@@ -2076,14 +2087,20 @@ display: block;
     border-left: 2px solid #ccc;
 }
 
-.reviews__btn--prev {
+.reviews__btn--prev, .slick-arrow--prev {
     left: 0;
     transform: rotate(-45deg);
 }
 
-.reviews__btn--next {
+.reviews__btn--next, .slick-arrow--next {
     right: 0;
     transform: rotate(135deg);
+}
+
+.slick-prev, .slick-next {
+    border: 0;
+    background: none;
+    display: none;
 }
 
 @media (max-width: 1230px) {
