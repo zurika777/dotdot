@@ -61,12 +61,9 @@ $(function() {
 
         $(this).toggleClass("accordion__item--active");
 
-
-
-        console.log(blockId)
         });
 
-
+/*slider review  */
 
     $("[data-slider]").slick({
         infinite: true,

@@ -4,6 +4,9 @@
 .reviews {
   padding: 0 10rem;
   position: relative;
+  .slick-slider {
+    padding: 0 4rem;
+  }
 }
 .reviews__item {
   //min-height: 21rem;
@@ -47,15 +50,18 @@
 
   }
 }
-.reviews__btn, .slick-arrow {
+.slick-arrow {
   display: block;
   font-size: 0;
   color: transparent;
+
   border: 0;
   background: 0;
+  cursor: pointer;
+
   position: absolute;
-  top: 50%;
-  z-index: 2;
+  top: 35%;
+  z-index: 1;
   transform: translateY(-50%);
 
   &:after {
@@ -66,17 +72,22 @@
 
     border-top: 2px solid #ccc;
     border-left: 2px solid #ccc;
-
   }
-  &--prev {
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.slick-prev {
     left: 0;
     transform: rotate(-45deg);
   }
-  &--next {
+.slick-next {
     right: 0;
     transform: rotate(135deg);
   }
-}
+
 .slick-prev, .slick-next {
   border: 0;
   background: none;
@@ -84,7 +95,7 @@
 }
 
 @include breakpoint($huge-bp) {
-  .reviews {
+  .reviews, .slick-slider{
     padding: 0 6rem;
   }
   .reviews__text {
@@ -96,11 +107,12 @@
 }
 
 @include breakpoint($tablet-bp) {
-  .reviews {
+  .reviews, .slick-slider{
     padding: 0;
   }
   .reviews__text {
     font-size: 1.2rem;
+    padding: 0;
   }
   .reviews__photo{
 
@@ -116,7 +128,7 @@
   .reviews__item {
     padding-left: 0;
   }
-  .reviews__btn {
+  .slick-arrow {
     top: 12%;
   }
   .reviews__author {
